@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_用户信息增删改查/tt.html" afterDir="false" />
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="1.用户信息展示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" afterDir="false" />
     </list>
@@ -70,12 +68,24 @@
       <option name="presentableId" value="Default" />
       <updated>1603420293073</updated>
       <workItem from="1603420294098" duration="5184000" />
-      <workItem from="1603427017842" duration="13478000" />
+      <workItem from="1603427017842" duration="16692000" />
     </task>
+    <task id="LOCAL-00001" summary="1.用户信息展示">
+      <created>1603454961214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603454961214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.用户信息展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.用户信息展示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="291" width="625" height="209" key="Github.ShareDialog" timestamp="1603451806711">
@@ -90,10 +100,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603420502331" />
-    <state x="301" y="185" width="672" height="677" key="run.anything.popup" timestamp="1603452742085">
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603454969307">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="301" y="185" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603452742085" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603454969307" />
+    <state x="302" y="186" width="672" height="677" key="run.anything.popup" timestamp="1603456241579">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="302" y="186" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603456241579" />
     <state x="306" y="125" width="672" height="678" key="search.everywhere.popup" timestamp="1603453740703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

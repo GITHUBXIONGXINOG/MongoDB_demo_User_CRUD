@@ -15,6 +15,8 @@ const http = require('http')
 const mongoose = require('mongoose')
 //3.1 导入url模块
 const url = require('url')
+//5.1 导入querystring模块 用于解析和格式化 URL 查询字符串的实用工具
+const querystring = require('querystring')
 
 //2.2 数据库连接 27017是mongodb数据库的默认端口
 mongoose.connect('mongodb://localhost/playground',{ useUnifiedTopology: true,useNewUrlParser: true  })
@@ -81,9 +83,9 @@ app.on('request',async (req,res) =>{
                 // find() 查询所有数据
             let users = await User.find()
 
-            //3.7 需要将查询到的数据拼接到字符串中
+            //4.1 需要将查询到的数据拼接到字符串中
             // ` `模板字符串 允许嵌入表达式的字符串字面量
-            //3.71 将页面上面固定部分保存在模板字符串中
+            //4,3 将页面上面固定部分保存在模板字符串中
             let list = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,6 +96,7 @@ app.on('request',async (req,res) =>{
 <body>
 <div class="container">
     <h6>
+<!--       5.4 将href改为/add,点击后进行跳转-->
         <a href="/add" class="btn btn-primary">添加用户</a>
     </h6>
     <table class="table table-striped table-bordered">
@@ -106,7 +109,7 @@ app.on('request',async (req,res) =>{
         </tr>
            `
 
-            //3.73 将数据插入到字符串中间
+            //4.4 将数据插入到字符串中间
             //users是数组 forEach循环遍历
             //${} 模板字符串使用${}显示外部数据
             users.forEach(item =>{
@@ -129,9 +132,7 @@ app.on('request',async (req,res) =>{
             `
             })
 
-
-
-                //3.72 添加页面下面固定部分
+                //4.2 添加页面下面固定部分
             list += `
                     </table>
                 </div>
@@ -142,9 +143,115 @@ app.on('request',async (req,res) =>{
 
             //将list作为响应
            res.end(list)
+            //5.1 添加用户
+                //由于请求是在地址栏进行,对地址进行判断
+        }else if(pathname == '/add'){
+            //5.2 add 值为模板字符串
+        let add = `
+        <!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<title>用户列表</title>
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+				</head>
+				<body>
+					<div class="container">
+						<h3>添加用户</h3>
+<!--						5.5 将表单提交方式设置为post
+                            5.9 设置action 属性 /add 点击时通过post发送到/add
+-->
+						<form method="post" action="/add">
+<!--						5.6 为每一个表单字段设置名字name属性
+                                有name属性服务器才能接收表单的数据
+-->
+						  <div class="form-group">
+						    <label>用户名</label>
+						    <input name="name" type="text" class="form-control" placeholder="请填写用户名">
+						  </div>
+						  <div class="form-group">
+						    <label>密码</label>
+						    <input name="password" type="password" class="form-control" placeholder="请输入密码">
+						  </div>
+						  <div class="form-group">
+						    <label>年龄</label>
+						    <input name="age" type="text" class="form-control" placeholder="请填写年龄">
+						  </div>
+						  <div class="form-group">
+						    <label>邮箱</label>
+						    <input name="email" type="email" class="form-control" placeholder="请填写邮箱">
+						  </div>
+						  <div class="form-group">
+						    <label>请选择爱好</label>
+<!--						    5.7 爱好使用相同的name 为一组-->
+						    <div>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="足球" name="hobbies"> 足球
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="篮球" name="hobbies"> 篮球
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="橄榄球" name="hobbies"> 橄榄球
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="敲代码" name="hobbies"> 敲代码
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="抽烟" name="hobbies"> 抽烟
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="喝酒" name="hobbies"> 喝酒
+						    	</label>
+						    	<label class="checkbox-inline">
+						    	  <input type="checkbox" value="烫头" name="hobbies"> 烫头
+						    	</label>
+						    </div>
+						  </div>
+						  <button type="submit" class="btn btn-primary">添加用户</button>
+						</form>
+					</div>
+				</body>
+				</html>
+                `;
+        //5.3 通过res.end方法响应给客户端
+        res.end(add)
+
         }
     }else if(method == 'POST'){
+        //5.8 用户添加功能
+            //两个/add地址,一个是GET请求,一个是POST请求
+            //5.9 在表单中设置form属性 method='POST' active='/add'
+            //点击提交按钮后会程序会运行到此处
+        if (pathname == '/add'){
+            //5.10 接收用户提交的信息
+                //req.on 接收提交的信息两个事件 data,end
+            //当参数传来时,触发data事件
+            let formData = ''
+            //接收POST参数
+            req.on('data',(param)=>{
+                //formData += 每次传过来的参数
+                formData += param
+            })
+            //当POSY参数传完时,触发end事件
+            req.on('end',async ()=>{
+                //querystring.parse 将url字符串转换成对象
+                let user = querystring.parse(formData)
+                //5.11 将用户提交的信息添加到数据库
+                    //await 变成同步形式
+                User.create(user)
+                //301 重定向
+                // await 可以用于等待一个 async 函数的返回值
+               await res.writeHead(301,{
+                    //跳转地址
+                    Location:'/list'
+                })
+                //end 代表请求结束
+                res.end()
+            })
 
+
+        }
     }
 
 
