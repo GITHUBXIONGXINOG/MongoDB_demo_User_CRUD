@@ -7,6 +7,13 @@
 // 4.将用户信息和表格HTML进行拼接并将拼接结果响应回客户端
 // 5.当用户访问/add时，呈现表单页面，并实现添加用户信息功能
 // 6.当用户访问/modify时，呈现修改页面，并实现修改用户信息功能
+    //修改用户信息分为两大步骤
+    //1.增加页面路由 呈现页面
+        //1.在点击修改按钮时,将用户id传递到当前页面
+        //2.从数据库中查询当前用户信息 将用户信息展示到页面中
+    //2.实现用户修改功能
+        //1.指定表单的提交地址以及请求方式
+        //2.接收客户端传递过来的修改信息 找到用户 将用户信息更改为最新的
 // 7.当用户访问/delete时，实现用户删除功能
 
 //1.1.导入http模块
@@ -71,7 +78,8 @@ app.on('request',async (req,res) =>{
     //3.3 请求地址 pathname
         //parse 对req.url进行处理,返回一个对象,对象里面有一个属性pathname纯粹的请求地址
         //通过对象解构的方式结构出来 es6里面的方法
-    const { pathname } = url.parse(req.url)
+        //query 对象类型,里面有id属性 要设置为true
+    const { pathname,query } = url.parse(req.url,true)
     //3.4 请求方式判断
         //GET 一般数据的请求
         //POST 一般添加修改数据
@@ -127,7 +135,10 @@ app.on('request',async (req,res) =>{
 						<td>${item.email}</td>     
 						<td>
 						    <a href="" class="btn btn-danger btn-xs">删除</a>
-						    <a href="" class="btn btn-success btn-xs">修改</a>
+<!--						    6.1 给修改按钮添加href
+                                    通过问号将id传递id
+-->
+						    <a href="/modify?id=${item._id}" class="btn btn-success btn-xs">修改</a>
                         </td>
             `
             })
@@ -218,6 +229,95 @@ app.on('request',async (req,res) =>{
         res.end(add)
 
         }
+        //6.2 增加修改路由
+        else if (pathname == '/modify'){
+            //6.5 查询利用id用户信息
+                //findOne 查询一条数据 对象
+          let user =  await User.findOne({_id:query.id})
+            //6.7 创建数组 保存爱好
+            let hobbies = ['足球','篮球','橄榄球','敲代码','抽烟','喝酒','烫头','吃饭','睡觉','打豆豆']
+          //6.6 接下来去表单里进行拼接
+            //6.3 呈现修改用户的页面
+            let modify = `
+        <!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<title>用户列表</title>
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+				</head>
+				<body>
+					<div class="container">
+						<h3>修改用户</h3>
+<!--						5.5 将表单提交方式设置为post
+                            5.9 设置action 属性 /add 点击时通过post发送到/add
+-->
+<!--id通过地址栏提交-->
+						<form method="post" action="/modify?id=${user._id}">
+<!--						5.6 为每一个表单字段设置名字name属性
+                                有name属性服务器才能接收表单的数据
+-->
+
+						  <div class="form-group">
+						    <label>用户名</label>
+<!--						    6.6 表单拼接
+                                input 里面用 value表示内容
+-->
+						    <input value="${user.name}" name="name" type="text" class="form-control" placeholder="请填写用户名">
+						  </div>
+						  <div class="form-group">
+						    <label>密码</label>
+						    <input value="${user.password}"  name="password" type="password" class="form-control" placeholder="请输入密码">
+						  </div>
+						  <div class="form-group">
+						    <label>年龄</label>
+						    <input value="${user.age}" name="age" type="text" class="form-control" placeholder="请填写年龄">
+						  </div>
+						  <div class="form-group">
+						    <label>邮箱</label>
+						    <input value="${user.email}" name="email" type="email" class="form-control" placeholder="请填写邮箱">
+						  </div>
+						  <div class="form-group">
+						    <label>请选择爱好</label>
+<!--						    5.7 爱好使用相同的name 为一组-->
+						    <div>
+<!--						    6.8 动态生成label爱好标签-->   
+                `;
+
+          hobbies.forEach(item =>{
+              //判断当前循环在不在用户的爱好数据组
+              //includes 判断item在不在数组hobbies里,在返回true,否则返回false
+              //item为hobbies循环遍历
+            let isHobby = user.hobbies.includes(item)
+              console.log(user.hobbies)
+              console.log(user.hobbies.includes(item    ))
+
+              if (isHobby){//选中爱好
+                  modify += `
+                  <label class="checkbox-inline">
+						    	  <input type="checkbox" value="${item}" name="hobbies" checked>${item}
+				  </label>
+                  `;
+              }else {//没有选中爱好
+                  modify += `
+                  <label class="checkbox-inline">
+						    	  <input type="checkbox" value="${item}" name="hobbies" >${item}
+						    	</label>
+                  `;
+              }
+          })
+          //字符串拼接
+          modify += ` </div>
+						  </div>
+						  <button type="submit" class="btn btn-primary">修改用户</button>
+						</form>
+					</div>
+				</body>
+				</html>`
+
+            //6.4 end 请求结束返回modify页面
+            res.end(modify)
+        }
     }else if(method == 'POST'){
         //5.8 用户添加功能
             //两个/add地址,一个是GET请求,一个是POST请求
@@ -251,6 +351,30 @@ app.on('request',async (req,res) =>{
             })
 
 
+        }
+        //6.9 添加修改请求
+        else if (pathname == '/modify'){
+            let formDataByModify = ''
+            //接收POST参数
+            req.on('data',(param)=>{
+                //formData += 每次传过来的参数
+                formDataByModify += param
+            })
+            //当POSY参数传完时,触发end事件
+            req.on('end',async ()=>{
+                //querystring.parse 将url字符串转换成对象
+                let user = querystring.parse(formDataByModify)
+                //修改用户信息
+                await User.updateOne({_id:query.id},user)
+                //301 重定向
+                // await 可以用于等待一个 async 函数的返回值
+                await res.writeHead(301,{
+                    //跳转地址
+                    Location:'/list'
+                })
+                //end 代表请求结束
+                res.end()
+            })
         }
     }
 
