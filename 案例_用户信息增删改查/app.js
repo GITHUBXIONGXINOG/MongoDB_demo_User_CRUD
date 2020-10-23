@@ -18,47 +18,16 @@
 
 //1.1.导入http模块
 const http = require('http')
-//2.1 导入mongoose模块
-const mongoose = require('mongoose')
+
 //3.1 导入url模块
 const url = require('url')
 //5.1 导入querystring模块 用于解析和格式化 URL 查询字符串的实用工具
 const querystring = require('querystring')
+//导入数据库
+require('./model/index')
+//导入创建用户集合的方式
+const User = require('./model/user')
 
-//2.2 数据库连接 27017是mongodb数据库的默认端口
-mongoose.connect('mongodb://localhost/playground',{ useUnifiedTopology: true,useNewUrlParser: true  })
-    .then(() => console.log('数据库连接成功'))
-    .catch(() => console.log('数据库连接失败'))
-
-//2.3 创建用户集合规则
-    //minlength 最小长度
-    //min 最小范围
-    //[String] 数组,每一个都是字符串类型
-const UserSchema = new mongoose.Schema({
-    name:{
-        type:String,
-        required:true,
-        minlength:2,
-        maxlength:20
-    },
-    age:{
-        type:Number,
-        min:18,
-        max:80
-    },
-    password:{
-        type:String,
-        required: true
-    },
-    email:String,
-    hobbies:[ String ]
-})
-
-//2.4 使用集合规则创建集合
-    //User 集合名字
-    //UserSchema 集合引用的规则
-    //得到集合的构造函数,用变量User接收
-const User = mongoose.model('User',UserSchema)
 
 
 //1.2.创建服务器
