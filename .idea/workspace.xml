@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="" />
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例_用户信息增删改查/tt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +19,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -24,12 +33,18 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1jGAwRWu0QhZWOtKC3Qqx8OwL6l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.1" />
@@ -55,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603420293073</updated>
       <workItem from="1603420294098" duration="5184000" />
-      <workItem from="1603427017842" duration="10262000" />
+      <workItem from="1603427017842" duration="13478000" />
     </task>
     <servers />
   </component>
@@ -63,17 +78,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="512" y="291" width="625" height="209" key="Github.ShareDialog" timestamp="1603451806711">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="512" y="291" width="625" height="209" key="Github.ShareDialog/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451806711" />
+    <state x="490" y="98" key="Github.UntrackedFilesDialog" timestamp="1603451819814">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="490" y="98" key="Github.UntrackedFilesDialog/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451819814" />
     <state x="142" y="45" key="SettingsEditor" timestamp="1603420502331">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603420502331" />
-    <state x="300" y="184" width="672" height="677" key="run.anything.popup" timestamp="1603451108487">
+    <state x="301" y="185" width="672" height="677" key="run.anything.popup" timestamp="1603452742085">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="300" y="184" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451108487" />
-    <state x="305" y="124" width="672" height="678" key="search.everywhere.popup" timestamp="1603451216842">
+    <state x="301" y="185" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603452742085" />
+    <state x="306" y="125" width="672" height="678" key="search.everywhere.popup" timestamp="1603453740703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="672" height="678" key="search.everywhere.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451216842" />
+    <state x="306" y="125" width="672" height="678" key="search.everywhere.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603453740703" />
   </component>
 </project>
