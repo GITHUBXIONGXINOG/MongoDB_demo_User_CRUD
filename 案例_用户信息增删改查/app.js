@@ -289,8 +289,6 @@ app.on('request',async (req,res) =>{
               //includes 判断item在不在数组hobbies里,在返回true,否则返回false
               //item为hobbies循环遍历
             let isHobby = user.hobbies.includes(item)
-              console.log(user.hobbies)
-              console.log(user.hobbies.includes(item    ))
 
               if (isHobby){//选中爱好
                   modify += `

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="2.添加用户">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="3.修改用户">
       <change beforePath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603420293073</updated>
       <workItem from="1603420294098" duration="5184000" />
-      <workItem from="1603427017842" duration="19866000" />
+      <workItem from="1603427017842" duration="20187000" />
     </task>
     <task id="LOCAL-00001" summary="1.用户信息展示">
       <created>1603454961214</created>
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603458253660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3.修改用户">
+      <created>1603461509183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603461509183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,7 +99,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.用户信息展示" />
     <MESSAGE value="2.添加用户" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.添加用户" />
+    <MESSAGE value="3.修改用户" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.修改用户" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="291" width="625" height="209" key="Github.ShareDialog" timestamp="1603451806711">
@@ -108,10 +115,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603420502331" />
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603458259477">
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603461511948">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603458259477" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603461511948" />
     <state x="302" y="186" width="672" height="677" key="run.anything.popup" timestamp="1603456241579">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
