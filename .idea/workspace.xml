@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1jGAwRWu0QhZWOtKC3Qqx8OwL6l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\www\MongoDB\基本使用" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\www\MongoDB" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="" />
+      <created>1603420293073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603420293073</updated>
+      <workItem from="1603420294098" duration="5184000" />
+      <workItem from="1603427017842" duration="10262000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="45" key="SettingsEditor" timestamp="1603420502331">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603420502331" />
+    <state x="300" y="184" width="672" height="677" key="run.anything.popup" timestamp="1603451108487">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="300" y="184" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451108487" />
+    <state x="305" y="124" width="672" height="678" key="search.everywhere.popup" timestamp="1603451216842">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="672" height="678" key="search.everywhere.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451216842" />
+  </component>
+</project>
