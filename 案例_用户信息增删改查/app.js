@@ -79,6 +79,8 @@ app.on('request',async (req,res) =>{
         //parse 对req.url进行处理,返回一个对象,对象里面有一个属性pathname纯粹的请求地址
         //通过对象解构的方式结构出来 es6里面的方法
         //query 对象类型,里面有id属性 要设置为true
+        // id参数存储在query中,通过query.id获取id
+        //在标签中,通过提交地址 如 a href="/remove?id=${item._id}" 来提交id
     const { pathname,query } = url.parse(req.url,true)
     //3.4 请求方式判断
         //GET 一般数据的请求
@@ -134,7 +136,8 @@ app.on('request',async (req,res) =>{
             </td> 
 						<td>${item.email}</td>     
 						<td>
-						    <a href="" class="btn btn-danger btn-xs">删除</a>
+<!--						7.1 给删除按钮添加路由-->
+						    <a href="/remove?id=${item._id}" class="btn btn-danger btn-xs">删除</a>
 <!--						    6.1 给修改按钮添加href
                                     通过问号将id传递id
 -->
@@ -316,6 +319,19 @@ app.on('request',async (req,res) =>{
             //6.4 end 请求结束返回modify页面
             res.end(modify)
         }
+        //7.2 添加删除路由
+        else if (pathname == '/remove'){
+            //res.end(query.id)
+            //删除操作
+          await  User.findOneAndDelete({_id:query.id})
+          //重定向到列表
+          res.writeHead(301,{
+              Location: '/list'
+          })
+            //结束请求
+            res.end()
+        }
+
     }else if(method == 'POST'){
         //5.8 用户添加功能
             //两个/add地址,一个是GET请求,一个是POST请求
