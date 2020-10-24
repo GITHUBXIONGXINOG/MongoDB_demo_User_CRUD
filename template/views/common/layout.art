@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--layout本身有布居的意思-->
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!--	block 预留位置 为当前位置定义名字-->
+	{{block 'link'}} {{/block}}
+</head>
+<body>
+	{{block 'content'}} {{/block}}
+</body>
+</html>

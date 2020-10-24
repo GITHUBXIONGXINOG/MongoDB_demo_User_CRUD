@@ -1,0 +1,11 @@
+<!--extend 继承模板-->
+{{extend './common/layout.art'}}
+<!--block 骨架 block里面就是填充内容-->
+<!--往content位置去填充-->
+{{block 'content'}}
+<p>{{ msg }}</p>
+{{/block}}
+
+{{block 'link'}}
+<link rel="stylesheet" type="text/css" href="./main.css">
+{{/block}}

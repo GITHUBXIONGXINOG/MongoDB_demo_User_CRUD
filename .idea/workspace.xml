@@ -4,12 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="4.删除用户">
-      <change afterPath="$PROJECT_DIR$/案例_用户信息增删改查/model/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_用户信息增删改查/model/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_用户信息增删改查/model/user.js" afterDir="false" />
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="5.模块化数据库和用户集合">
+      <change afterPath="$PROJECT_DIR$/template/01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/05.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/06.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/01.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/02.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/03.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/04.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/05.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/06.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/common/footer.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/common/header.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/common/layout.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/index.art" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/views/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/文件清单.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/案例_用户信息增删改查/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +60,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -49,9 +68,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/02_最长公共前缀" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,8 +78,20 @@
       <recent name="D:\www\MongoDB\基本使用" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\www\MongoDB\template\views" />
+      <recent name="D:\www\MongoDB\template" />
       <recent name="D:\www\MongoDB" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MongoDB/template/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603420293073</updated>
       <workItem from="1603420294098" duration="5184000" />
-      <workItem from="1603427017842" duration="21236000" />
+      <workItem from="1603427017842" duration="28256000" />
     </task>
     <task id="LOCAL-00001" summary="1.用户信息展示">
       <created>1603454961214</created>
@@ -108,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603462168585</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5.模块化数据库和用户集合">
+      <created>1603462644767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603462644767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,9 +157,18 @@
     <MESSAGE value="2.添加用户" />
     <MESSAGE value="3.修改用户" />
     <MESSAGE value="4.删除用户" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.删除用户" />
+    <MESSAGE value="5.模块化数据库和用户集合" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.模块化数据库和用户集合" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="384" y="201" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603464535354">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="384" y="201" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603464535354" />
+    <state x="421" y="155" key="FileChooserDialogImpl" timestamp="1603468664846">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="421" y="155" key="FileChooserDialogImpl/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603468664846" />
     <state x="512" y="291" width="625" height="209" key="Github.ShareDialog" timestamp="1603451806711">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -130,18 +177,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="490" y="98" key="Github.UntrackedFilesDialog/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603451819814" />
-    <state x="142" y="45" key="SettingsEditor" timestamp="1603420502331">
+    <state x="142" y="45" key="SettingsEditor" timestamp="1603464516132">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603420502331" />
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603462177836">
+    <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603464516132" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603462647322">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603462177836" />
-    <state x="302" y="186" width="672" height="677" key="run.anything.popup" timestamp="1603456241579">
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603462647322" />
+    <state x="303" y="187" width="672" height="677" key="run.anything.popup" timestamp="1603504892057">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="302" y="186" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603456241579" />
+    <state x="303" y="187" width="672" height="677" key="run.anything.popup/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603504892057" />
     <state x="306" y="125" width="672" height="678" key="search.everywhere.popup" timestamp="1603453740703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

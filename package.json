@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "art-template": "^4.13.2",
+    "dateformat": "^3.0.3",
     "mongoose": "^5.10.9"
   }
 }
