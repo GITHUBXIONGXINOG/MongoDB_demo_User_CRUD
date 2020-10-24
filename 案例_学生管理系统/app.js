@@ -1,5 +1,10 @@
 //2.1 引入http模块
 const http = require('http')
+// 3.3 导入connect数据库连接模块
+require('./model/connect')
+//3.7 导入学生信息集合
+const Student = require('./model/user')
+
 //2.2 http模块下的createServer方法就是用来创建网站服务器的
 const app = http.createServer()
 //2.3 为了客户端能与服务器端之间通信
