@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="demo2_3.连接数据库并根据需求设计学员信息表">
-      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/public/css/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/route/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/views/index.art" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例_学生管理系统/views/list.art" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/案例_学生管理系统/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/案例_学生管理系统/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/案例_学生管理系统/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/案例_学生管理系统/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="84942e40-36eb-4383-b7f7-c280a269a6fd" name="Default Changelist" comment="demo2_完" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603420293073</updated>
       <workItem from="1603420294098" duration="5184000" />
-      <workItem from="1603427017842" duration="36050000" />
+      <workItem from="1603427017842" duration="36876000" />
     </task>
     <task id="LOCAL-00001" summary="1.用户信息展示">
       <created>1603454961214</created>
@@ -150,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603507171476</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="demo2_完">
+      <created>1603515561595</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603515561595</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +162,8 @@
     <MESSAGE value="5.模块化数据库和用户集合" />
     <MESSAGE value="demo2_创建网站服务器实现客户端和服务器端通信" />
     <MESSAGE value="demo2_3.连接数据库并根据需求设计学员信息表" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo2_3.连接数据库并根据需求设计学员信息表" />
+    <MESSAGE value="demo2_完" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo2_完" />
   </component>
   <component name="WindowStateProjectService">
     <state x="384" y="201" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603464535354">
@@ -187,10 +186,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="142" y="45" key="SettingsEditor/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603464516132" />
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603505772944">
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2" timestamp="1603515562152">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603505772944" />
+    <state x="233" y="133" key="Vcs.Push.Dialog.v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603515562152" />
+    <state x="448" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603515541246">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="448" y="313" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800/353.-1080.1536.864@0.0.1280.800" timestamp="1603515541246" />
     <state x="303" y="187" width="672" height="677" key="run.anything.popup" timestamp="1603504892057">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
